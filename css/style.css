@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar{
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navbar img{
+    width: 50px;
+    
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0;
+    right: 20px;
+    position: relative;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #000000;
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover::after {
+    transform: scaleX(1); 
+  }
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.main h1{ 
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    bottom: 120px;
+    font-style: italic;
+}
+
+.main button {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    top: 100px;
+  }
+  
+.main button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.form-contacto {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 150px;
+    position: relative;
+}
+
+.form-contacto h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group button {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+    text-decoration: none;
+    width: 100%; 
+}
+
+.form-group button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
