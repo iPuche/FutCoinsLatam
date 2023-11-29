@@ -411,6 +411,17 @@ footer p {
 }
 }
 
+/* Buy */
+
+@media (max-width: 768px) {
+  #product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    margin-bottom: 20px; 
+  }
+}
 
 
 
